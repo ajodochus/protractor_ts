@@ -3,11 +3,10 @@ import { browser, by, element } from 'protractor';
 export class AppPage {
 
   open_terminal_xy(link: string){
-    
-     element(by.xpath("//div[@class=\"card card-small\"]/span[text() = \"" + link + "\"]")).click();
-     
 
-  }
+     element(by.xpath("//div[@class=\"card card-small\"]/span[text() = \"" + link + "\"]")).click();
+  
+   }
 
 
   navigateTo(): Promise<unknown> {

@@ -1,12 +1,16 @@
 # howto
-// start app:
+## start app:
+cd .\e2e\
 ng serve --open
 
-//start Protractor tests: 
+## start Protractor tests: 
 protractor protractor.conf.js
 
-// start unit tests:
+## start unit tests:
 ng test 
+
+## Dictionary nutzen --> it('should display terminal message'
+npm install typescript-collections --save
 
 
 

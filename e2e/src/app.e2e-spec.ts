@@ -19,16 +19,22 @@ describe('workspace-project App', () => {
   it('should display terminal message', () => {
     var bsTree = new Collections.Dictionary<string, string>();
     bsTree.setValue("Angular Material", "ng add @angular/material");
-    bsTree.setValue("b", "bval");
+    bsTree.setValue("New Component", "ng generate component xyz");
+    bsTree.setValue("Add PWA Support", "ng add @angular/pwa");
+    bsTree.setValue("Add Dependency", "ng add _____");
+    bsTree.setValue("Run and Watch Tests", "ng test");
+    bsTree.setValue("Build for Production", "ng build --prod");
+    
     
   bsTree.forEach(Key => {
     console.log('val: ', bsTree.getValue(Key));
+    page.open_terminal_xy(Key);
+    expect(page.get_terminal_output()).toEqual(bsTree.getValue(Key));
   });
 
 
     
-      page.open_terminal_xy("Angular Material");
-      expect(page.get_terminal_output()).toEqual('ng add @angular/material');
+      
   
     
     
