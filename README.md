@@ -1,3 +1,18 @@
+# howto
+// start app:
+ng serve --open
+
+//start Protractor tests: 
+protractor protractor.conf.js
+
+// start unit tests:
+ng test 
+
+
+
+
+
+
 # Firstapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
